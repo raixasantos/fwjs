@@ -1,0 +1,13 @@
+.nav-menu {
+    display: inline;
+}
+
+.nav-button {
+    margin-right: 10px;
+}
+
+.nav-button-selected {
+    margin-right: 10px;
+    font-weight: bold;
+    background-color: #aaa;
+}
