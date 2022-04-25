@@ -1,7 +1,7 @@
 <script lang="ts">
 </script>
 
-<main>
+<main> <!-- não é obrigatório -->
 	<h1>Olá mundo!</h1>
 </main>
 
