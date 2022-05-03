@@ -30,6 +30,8 @@ function select(buttonIndex: number) {
 
 <style scoped>    
     div {
-        margin: 50px;
-    }
+        display: flex;
+        flex-direction: column;
+        max-width: fit-content;
+      }
 </style>

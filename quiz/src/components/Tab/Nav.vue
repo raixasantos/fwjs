@@ -24,11 +24,15 @@
 
 <style scoped>    
 .nav-menu {
-    display: inline;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
 button {
     margin-right: 10px;
+    padding: 5px;
 }
 
 .selected {

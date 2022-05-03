@@ -13,4 +13,10 @@
 </script>
 
 <style scoped>    
+    div {
+        text-align: center;
+        border: 2px solid black;
+        border-radius: 5px;
+        padding: 50px 20px;
+      }
 </style>
