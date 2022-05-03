@@ -1,16 +1,14 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  template: `
-    <app-quiz></app-quiz>
-  `,
-  styles: [`
-    h1 {
-      text-align: center;
-    }
-  `]
+  selector: "app-root",
+  template: `<div><app-tab></app-tab></div>`,
+  styles: [
+    `
+      div {
+        width: 230px;
+      }
+    `
+  ]
 })
-export class AppComponent {
-  title = 'quiz';
-}
+export class AppComponent {}
