@@ -1,12 +1,10 @@
 <script lang="ts">
+	import Tab from "../src/components/Tab/Tab.svelte"
 </script>
 
-<main> <!-- não é obrigatório -->
-	<h1>Olá mundo!</h1>
+<main>
+	<Tab/>
 </main>
 
 <style>
-	main {
-		text-align: center;
-	}
 </style>
