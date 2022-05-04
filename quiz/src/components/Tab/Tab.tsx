@@ -4,6 +4,10 @@ import { Nav } from './Nav';
 import { Panel } from './Panel';
 import './Tab.css';
 
+// interface TabProps {
+//     options: string[]
+// }
+
 export function Tab() {
     const buttonsOptions = [
         {
