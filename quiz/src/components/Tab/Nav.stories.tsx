@@ -6,7 +6,7 @@ import { Nav } from './Nav';
 // More on default export: https://storybook.js.org/docs/react/writing-stories/introduction#default-export
 export default {
   title: 'Tab/Nav',
-  component: Nav,
+  component: Nav
 } as ComponentMeta<typeof Nav>;
 
 // More on component templates: https://storybook.js.org/docs/react/writing-stories/introduction#using-args
