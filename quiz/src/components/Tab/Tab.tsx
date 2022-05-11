@@ -17,7 +17,7 @@ export function Tab(props: TabProps) {
 
     return (
         <div className="tab">
-            <Nav options={ props.options } currentTab={currentTab} handleSetTab={ handleCurrentTab } />
+            <Nav options={ props.options } currentTab={currentTab} onSetTab={ handleCurrentTab } />
             <Panel text={ props.texts[currentTab] } />
         </div>
     );

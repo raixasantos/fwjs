@@ -14,6 +14,7 @@ const Template: ComponentStory<typeof Nav> = (args) => <Nav {...args} />;
 
 export const Primary = Template.bind({});
 // More on args: https://storybook.js.org/docs/react/writing-stories/args
+// Separar em padrão e selecionado
 Primary.args = {
   options: ['Botão 1', 'Botão 2'],
   currentTab: 0
