@@ -1,13 +1,16 @@
-.nav-menu {
-    display: inline;
-}
-
 .nav-button {
-    margin-right: 10px;
+    padding: 5px;
 }
 
 .nav-button-selected {
-    margin-right: 10px;
+    padding: 5px;
     font-weight: bold;
     background-color: #aaa;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }

@@ -21,7 +21,7 @@ export function Nav(props: NavProps) {
     ))
 
     return (
-        <div className='nav-menu'>
+        <div>
             {buttons}
         </div>
     );
