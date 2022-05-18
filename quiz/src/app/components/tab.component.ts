@@ -1,9 +1,9 @@
-import { Component } from "@angular/core";
+import { Component, Input } from "@angular/core";
 
 @Component({
   selector: "app-tab",
   template: ` <div>
-    <app-nav [options]="buttonsOptions" [selection]="currentButton" (onSelection)="select($event)">
+    <app-nav [options]="options" [selection]="currentButton" (onSelection)="select($event)">
     </app-nav>
     <app-panel [text]="texts[currentButton]"> </app-panel>
   </div>`,
@@ -17,8 +17,9 @@ import { Component } from "@angular/core";
   ]
 })
 export class TabComponent {
-  buttonsOptions = ["Tab1", "Tab2", "Tab3", "Tab4"];
-  texts = ["Texto da Tab1", "Texto da Tab2", "Texto da Tab3", "Texto da Tab4"];
+  @Input() options!: string[];
+  @Input() texts!: string[];
+
   currentButton = 0;
   select(buttonIndex: number) {
     this.currentButton = buttonIndex;
