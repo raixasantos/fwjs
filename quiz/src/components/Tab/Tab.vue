@@ -1,7 +1,7 @@
 <template>
     <div>
         <Nav
-            :options="buttonsOptions"
+            :options="options"
             :selection="currentButton"
             @on-selection="select"
         />
@@ -17,8 +17,12 @@ import { ref } from 'vue'
 import Panel, { type PanelProps } from './Panel.vue'
 import Nav, { type NavProps} from './Nav.vue'
 
-const buttonsOptions: NavProps = ["Tab1", "Tab2", "Tab3", "Tab4"]
-const texts = ["Texto da Tab1", "Texto da Tab2", "Texto da Tab3", "Texto da Tab4"]
+export interface TabProps {
+    options: string[]
+    texts: string[]
+}
+
+defineProps<TabProps>()
 
 const currentButton =  ref(0)
 
