@@ -7,10 +7,3 @@
     font-weight: bold;
     background-color: #aaa;
 }
-
-div {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}

@@ -1,22 +1,22 @@
 import React from 'react';
 import './App.css';
-// import { Quiz } from './components/Quiz/Quiz';
 import { Tab } from './components/Tab/Tab';
+import { TabsForm } from './components/Tab/TabsForm';
 
 function App() {  
-    const buttonsOptions = [
-        {
-            options: ["Tab1", "Tab2", "Tab3", "Tab4"],
-            texts: ["Texto do Tab1",
-                "Texto do Tab2",
-                "Texto do Tab3",
-                "Texto do Tab4"]
-        }
-    ];
+    const tabInfos = {options: [], texts: []};    
 
-    // return <Quiz/>;
-    return <Tab options={buttonsOptions[0].options}
-                texts={buttonsOptions[0].texts} />;
+    return (
+        <div className="container-page">
+            <div className="container-tabs">
+                <TabsForm/>
+            </div>
+            <div className="container-content">
+                <Tab options={tabInfos.options}
+                    texts={tabInfos.texts} />
+            </div>
+        </div>
+    );
 }
 
 export default App;

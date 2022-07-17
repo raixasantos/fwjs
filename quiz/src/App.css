@@ -1,3 +1,13 @@
 .App {
   text-align: center;
 }
+
+.container-page {
+  display: flex;
+  font-family: 'Lato', sans-serif;
+}
+
+.container-tabs,
+.container-content {
+  margin: 30px;
+}

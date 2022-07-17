@@ -16,9 +16,23 @@ export function Tab(props: TabProps) {
     }
 
     return (
-        <div className="tab">
-            <Nav options={ props.options } currentTab={currentTab} onSetTab={ handleCurrentTab } />
-            <Panel text={ props.texts[currentTab] } />
+        <div className="container-tab">
+            <h2>Conteúdo</h2>
+            {props.options.length > 0 ?
+                <div className="container-tabcontent">
+                    <Nav options={ props.options } 
+                        currentTab={currentTab} 
+                        onSetTab={ handleCurrentTab } />
+                    <Panel text={ props.texts[currentTab] } />
+                </div>
+            :   
+                <div className="container-tabcontent">
+                    <Nav options={ ['Tab'] } 
+                        currentTab={currentTab} 
+                        onSetTab={ handleCurrentTab } />
+                    <Panel text={ 'Sem conteúdo' } />
+                </div>
+            }
         </div>
     );
 }

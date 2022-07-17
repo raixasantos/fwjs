@@ -9,7 +9,7 @@ interface PanelProps {
 export function Panel(props: PanelProps) {
     return (
         <div className='panel-text'>
-            <h3> {props.text} </h3>
+            {props.text}
         </div>
     );
 }
