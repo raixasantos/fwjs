@@ -2,12 +2,30 @@ import { Component } from "@angular/core";
 
 @Component({
   selector: "app-root",
-  template: `<div><app-tab [options]="buttonsOptions" [texts]="texts"></app-tab></div>`,
+  template: `<div class="container-page">
+    <div class="container-tabs">
+      <app-tabs-form></app-tabs-form>
+    </div>
+    <div class="container-content">
+      <app-tab [options]="buttonsOptions" [texts]="texts"></app-tab>
+    </div>
+  </div>
+  `,
   styles: [
     `
-      div {
-        width: 230px;
-      }
+    .App {
+      text-align: center;
+    }
+    
+    .container-page {
+      display: flex;
+      font-family: 'Lato', sans-serif;
+    }
+    
+    .container-tabs,
+    .container-content {
+      margin: 30px;
+    }
     `
   ]
 })
